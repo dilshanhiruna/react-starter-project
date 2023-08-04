@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createPost } from "../services/api";
 // pc:begin: material-ui
-// import { Typography, TextField, Button } from "@mui/material";
+import { Typography, TextField, Button } from "@mui/material";
 // pc:end: material-ui
 
 // pc:begin: ant-design
@@ -36,114 +36,114 @@ console.error("Error creating blog post:", error);
   // pc:end: ant-design
 
   // pc:begin: bootstrap
-// const [title, setTitle] = useState("");
-// const [content, setContent] = useState("");
-// 
-// const handleSubmit = async (e) => {
-// e.preventDefault();
-// if (!title || !content) return;
-// 
-// try {
-// await createPost({
-// title,
-// body: content,
-// });
-// navigate("/");
-// } catch (error) {
-// console.error("Error creating blog post:", error);
-// }
-// };
+const [title, setTitle] = useState("");
+const [content, setContent] = useState("");
+
+const handleSubmit = async (e) => {
+e.preventDefault();
+if (!title || !content) return;
+
+try {
+await createPost({
+title,
+body: content,
+});
+navigate("/");
+} catch (error) {
+console.error("Error creating blog post:", error);
+}
+};
   // pc:end: bootstrap
 
   // pc:begin: material-ui
-// const [title, setTitle] = useState("");
-// const [content, setContent] = useState("");
-// 
-// const handleSubmit = async (e) => {
-// e.preventDefault();
-// if (!title || !content) return;
-// 
-// try {
-// await createPost({
-// title,
-// body: content,
-// });
-// navigate("/");
-// } catch (error) {
-// console.error("Error creating blog post:", error);
-// }
-// };
+const [title, setTitle] = useState("");
+const [content, setContent] = useState("");
+
+const handleSubmit = async (e) => {
+e.preventDefault();
+if (!title || !content) return;
+
+try {
+await createPost({
+title,
+body: content,
+});
+navigate("/");
+} catch (error) {
+console.error("Error creating blog post:", error);
+}
+};
   // pc:end: material-ui
 
   // pc:begin: bootstrap
-// return (
-// <div>
-// <h2>Create New Post</h2>
-// <form onSubmit={handleSubmit}>
-// <div className="mb-3">
-// <label htmlFor="title" className="form-label">
-// Title
-// </label>
-// <input
-// type="text"
-// className="form-control"
-// id="title"
-// value={title}
-// onChange={(e) => setTitle(e.target.value)}
-// required
-// />
-// </div>
-// <div className="mb-3">
-// <label htmlFor="content" className="form-label">
-// Content
-// </label>
-// <textarea
-// className="form-control"
-// id="content"
-// value={content}
-// onChange={(e) => setContent(e.target.value)}
-// required
-// ></textarea>
-// </div>
-// <button type="submit" className="btn btn-primary">
-// Create Post
-// </button>
-// </form>
-// </div>
-// );
+return (
+<div>
+<h2>Create New Post</h2>
+<form onSubmit={handleSubmit}>
+<div className="mb-3">
+<label htmlFor="title" className="form-label">
+Title
+</label>
+<input
+type="text"
+className="form-control"
+id="title"
+value={title}
+onChange={(e) => setTitle(e.target.value)}
+required
+/>
+</div>
+<div className="mb-3">
+<label htmlFor="content" className="form-label">
+Content
+</label>
+<textarea
+className="form-control"
+id="content"
+value={content}
+onChange={(e) => setContent(e.target.value)}
+required
+></textarea>
+</div>
+<button type="submit" className="btn btn-primary">
+Create Post
+</button>
+</form>
+</div>
+);
   // pc:end: bootstrap
 
   // pc:begin: material-ui
-// return (
-// <div>
-// <Typography variant="h2">Create New Post</Typography>
-// <form onSubmit={handleSubmit}>
-// <TextField
-// label="Title"
-// variant="outlined"
-// value={title}
-// onChange={(e) => setTitle(e.target.value)}
-// required
-// fullWidth
-// margin="normal"
-// />
-// <TextField
-// label="Content"
-// variant="outlined"
-// value={content}
-// onChange={(e) => setContent(e.target.value)}
-// required
-// multiline
-// rows={4}
-// fullWidth
-// margin="normal"
-// />
-// <Button type="submit" variant="contained" color="primary">
-// Create Post
-// </Button>
-// </form>
-// </div>
-// );
+return (
+<div>
+<Typography variant="h2">Create New Post</Typography>
+<form onSubmit={handleSubmit}>
+<TextField
+label="Title"
+variant="outlined"
+value={title}
+onChange={(e) => setTitle(e.target.value)}
+required
+fullWidth
+margin="normal"
+/>
+<TextField
+label="Content"
+variant="outlined"
+value={content}
+onChange={(e) => setContent(e.target.value)}
+required
+multiline
+rows={4}
+fullWidth
+margin="normal"
+/>
+<Button type="submit" variant="contained" color="primary">
+Create Post
+</Button>
+</form>
+</div>
+);
   // pc:end: material-ui
 
   // pc:begin: ant-design

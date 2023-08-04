@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { deletePost, fetchPost } from "../services/api";
 // pc:begin: material-ui
-// import { Typography, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 // pc:end: material-ui
 
 // pc:begin: ant-design
@@ -35,27 +35,27 @@ const BlogPostDetail = () => {
   }
 
   // pc:begin: bootstrap
-// return (
-// <div>
-// <h2>{post.title}</h2>
-// <p>{post.body}</p>
-// <button className="btn btn-danger" onClick={handleDelete}>
-// Delete
-// </button>
-// </div>
-// );
+return (
+<div>
+<h2>{post.title}</h2>
+<p>{post.body}</p>
+<button className="btn btn-danger" onClick={handleDelete}>
+Delete
+</button>
+</div>
+);
   // pc:end: bootstrap
 
   // pc:begin: material-ui
-// return (
-// <div>
-// <Typography variant="h2">{post.title}</Typography>
-// <Typography variant="body1">{post.body}</Typography>
-// <Button variant="contained" color="error" onClick={handleDelete}>
-// Delete
-// </Button>
-// </div>
-// );
+return (
+<div>
+<Typography variant="h2">{post.title}</Typography>
+<Typography variant="body1">{post.body}</Typography>
+<Button variant="contained" color="error" onClick={handleDelete}>
+Delete
+</Button>
+</div>
+);
   // pc:end: material-ui
 
   // pc:begin: ant-design

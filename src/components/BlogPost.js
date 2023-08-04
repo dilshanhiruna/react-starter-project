@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // pc:begin: material-ui
-// import { Card, CardContent, Typography, Button } from "@mui/material";
+import { Card, CardContent, Typography, Button } from "@mui/material";
 // pc:end: material-ui
 
 // pc:begin: ant-design
@@ -13,40 +13,40 @@ const { Text, Paragraph } = Typography;
 
 const BlogPost = ({ title, summary, postId }) => {
   // pc:begin: bootstrap
-// return (
-// <div className="blog-post card">
-// <div className="card-body">
-// <h2 className="card-title">{title}</h2>
-// <p className="card-text">{summary}</p>
-// <Link to={`/post/${postId}`} className="btn btn-primary">
-// Read More
-// </Link>
-// </div>
-// </div>
-// );
+return (
+<div className="blog-post card">
+<div className="card-body">
+<h2 className="card-title">{title}</h2>
+<p className="card-text">{summary}</p>
+<Link to={`/post/${postId}`} className="btn btn-primary">
+Read More
+</Link>
+</div>
+</div>
+);
   // pc:end: bootstrap
 
   // pc:begin: material-ui
-// return (
-// <Card variant="outlined" className="blog-post">
-// <CardContent>
-// <Typography variant="h5" component="h2">
-// {title}
-// </Typography>
-// <Typography variant="body2" component="p">
-// {summary}
-// </Typography>
-// <Button
-// component={Link}
-// to={`/post/${postId}`}
-// variant="contained"
-// color="primary"
-// >
-// Read More
-// </Button>
-// </CardContent>
-// </Card>
-// );
+return (
+<Card variant="outlined" className="blog-post">
+<CardContent>
+<Typography variant="h5" component="h2">
+{title}
+</Typography>
+<Typography variant="body2" component="p">
+{summary}
+</Typography>
+<Button
+component={Link}
+to={`/post/${postId}`}
+variant="contained"
+color="primary"
+>
+Read More
+</Button>
+</CardContent>
+</Card>
+);
   // pc:end: material-ui
 
   // pc:begin: ant-design

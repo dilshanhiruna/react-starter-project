@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 // pc:begin: material-ui
-// import { TextField, Button, Typography, Container } from "@mui/material";
+import { TextField, Button, Typography, Container } from "@mui/material";
 // pc:end: material-ui
 
 // pc:begin: ant-design
@@ -30,85 +30,85 @@ const SignUp = () => {
   };
 
   // pc:begin: bootstrap
-// return (
-// <div>
-// <h2>Sign Up</h2>
-// <form onSubmit={handleSignUp}>
-// <div className="mb-3">
-// <label htmlFor="email" className="form-label">
-// Email
-// </label>
-// <input
-// type="email"
-// className="form-control"
-// id="email"
-// value={email}
-// onChange={(e) => setEmail(e.target.value)}
-// required
-// />
-// </div>
-// <div className="mb-3">
-// <label htmlFor="password" className="form-label">
-// Password
-// </label>
-// <input
-// type="password"
-// className="form-control"
-// id="password"
-// value={password}
-// onChange={(e) => setPassword(e.target.value)}
-// required
-// />
-// </div>
-// {error && <div className="alert alert-danger">{error}</div>}
-// <button type="submit" className="btn btn-primary">
-// Sign Up
-// </button>
-// <Link to="/signin" className="btn btn-link">
-// Already have an account? Sign In
-// </Link>
-// </form>
-// </div>
-// );
+return (
+<div>
+<h2>Sign Up</h2>
+<form onSubmit={handleSignUp}>
+<div className="mb-3">
+<label htmlFor="email" className="form-label">
+Email
+</label>
+<input
+type="email"
+className="form-control"
+id="email"
+value={email}
+onChange={(e) => setEmail(e.target.value)}
+required
+/>
+</div>
+<div className="mb-3">
+<label htmlFor="password" className="form-label">
+Password
+</label>
+<input
+type="password"
+className="form-control"
+id="password"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+required
+/>
+</div>
+{error && <div className="alert alert-danger">{error}</div>}
+<button type="submit" className="btn btn-primary">
+Sign Up
+</button>
+<Link to="/signin" className="btn btn-link">
+Already have an account? Sign In
+</Link>
+</form>
+</div>
+);
   // pc:end: bootstrap
 
   // pc:begin: material-ui
-// return (
-// <Container maxWidth="sm">
-// <Typography variant="h4" gutterBottom>
-// Sign Up
-// </Typography>
-// <form onSubmit={handleSignUp}>
-// <TextField
-// label="Email"
-// type="email"
-// fullWidth
-// value={email}
-// onChange={(e) => setEmail(e.target.value)}
-// required
-// margin="normal"
-// variant="outlined"
-// />
-// <TextField
-// label="Password"
-// type="password"
-// fullWidth
-// value={password}
-// onChange={(e) => setPassword(e.target.value)}
-// required
-// margin="normal"
-// variant="outlined"
-// />
-// {error && <Typography color="error">{error}</Typography>}
-// <Button type="submit" variant="contained" color="primary" fullWidth>
-// Sign Up
-// </Button>
-// <Typography variant="body2" gutterBottom>
-// Already have an account? <Link to="/signin">Sign In</Link>
-// </Typography>
-// </form>
-// </Container>
-// );
+return (
+<Container maxWidth="sm">
+<Typography variant="h4" gutterBottom>
+Sign Up
+</Typography>
+<form onSubmit={handleSignUp}>
+<TextField
+label="Email"
+type="email"
+fullWidth
+value={email}
+onChange={(e) => setEmail(e.target.value)}
+required
+margin="normal"
+variant="outlined"
+/>
+<TextField
+label="Password"
+type="password"
+fullWidth
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+required
+margin="normal"
+variant="outlined"
+/>
+{error && <Typography color="error">{error}</Typography>}
+<Button type="submit" variant="contained" color="primary" fullWidth>
+Sign Up
+</Button>
+<Typography variant="body2" gutterBottom>
+Already have an account? <Link to="/signin">Sign In</Link>
+</Typography>
+</form>
+</Container>
+);
   // pc:end: material-ui
 
   // pc:begin: ant-design
