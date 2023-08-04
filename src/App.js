@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import BlogPost from "./components/BlogPost";
+import BlogPostDetail from "./components/BlogPostDetail";
+import { fetchPosts } from "./services/api";
+import NewPost from "./components/NewPost";
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
 
-function App() {
+const Home = ({ blogPosts }) => (
+  <>
+    <h2>Blog Posts</h2>
+    {blogPosts.map((post) => (
+      <BlogPost
+        key={post.id}
+        title={post.title}
+        summary={post.body}
+        postId={post.id}
+      />
+    ))}
+  </>
+);
+
+const App = () => {
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    fetchPosts()
+      .then((data) => setBlogPosts(data))
+      .catch((error) => console.error("Error fetching blog posts:", error));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <div className="container mt-4">
+          <Routes>
+            <Route path="/" element={<Home blogPosts={blogPosts} />} />
+            <Route path="/post/:postId" element={<BlogPostDetail />} />
+            <Route path="/create" element={<NewPost />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
