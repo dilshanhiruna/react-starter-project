@@ -1,0 +1,95 @@
+[
+  {
+    "label": "category1",
+    "description": "Description of category 1",
+    "required": true,
+    "features": [
+      {
+        "label": "option1",
+        "description": "Description of option 1",
+        "depend_features": [""],
+        "depend_categories": ["category2"],
+        "default": false,
+        "enabled": false
+      },
+      {
+        "label": "option2",
+        "description": "Description of option 2",
+        "depend_features": [""],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      },
+      {
+        "label": "option3",
+        "description": "Description of option 3",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "category2",
+    "description": "Description of category 2",
+    "required": true,
+    "features": [
+      {
+        "label": "option4",
+        "description": "Description of option 4",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      },
+      {
+        "label": "option5",
+        "description": "Description of option 5",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      },
+      {
+        "label": "option6",
+        "description": "Description of option 6",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "category3",
+    "description": "Description of category 3",
+    "required": true,
+    "features": [
+      {
+        "label": "option7",
+        "description": "Description of option 7",
+        "depend_features": [""],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      },
+      {
+        "label": "option8",
+        "description": "Description of option 8",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      },
+      {
+        "label": "option9",
+        "description": "Description of option 9",
+        "depend_features": [],
+        "depend_categories": [],
+        "default": false,
+        "enabled": true
+      }
+    ]
+  }
+]
