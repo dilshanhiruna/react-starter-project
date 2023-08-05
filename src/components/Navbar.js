@@ -108,31 +108,31 @@ Sign In
   // pc:end: material-ui
 
   // pc:begin: ant-design
-return (
-<Header>
-<div className="logo" />
-<Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-<Menu.Item key="1">
-<Link to="/">My Blog</Link>
-</Menu.Item>
-<Menu.Item key="2">
-<Link to="/create">Create Post</Link>
-</Menu.Item>
-{currentUser ? (
-<Menu.Item key="3">
-<Button type="text" onClick={handleSignOut}>
-Sign Out
-</Button>
-</Menu.Item>
-) : (
-<Menu.Item key="3">
-<Link to="/signin">Sign In</Link>
-</Menu.Item>
-)}
-</Menu>
-<ThemeToggle />
-</Header>
-);
+  return (
+    <Header>
+      <div className="logo" />
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
+        <Menu.Item key="1">
+          <Link to="/">My Blog</Link>
+        </Menu.Item>
+        <Menu.Item key="2">
+          <Link to="/create">Create Post</Link>
+        </Menu.Item>
+        {currentUser ? (
+          <Menu.Item key="3">
+            <Button type="text" onClick={handleSignOut}>
+              Sign Out
+            </Button>
+          </Menu.Item>
+        ) : (
+          <Menu.Item key="3">
+            <Link to="/signin">Sign In</Link>
+          </Menu.Item>
+        )}
+      </Menu>
+      <ThemeToggle />
+    </Header>
+  );
   // pc:end: ant-design
 };
 

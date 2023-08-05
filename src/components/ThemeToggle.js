@@ -14,6 +14,11 @@ import { toggleDarkMode } from "../store/store";
 import useThemeStore from "../store/themeStore";
 // pc:end: zustand
 
+// pc:begin: jotai
+import { useAtom } from "jotai";
+import { darkModeAtom } from "../store/themeAtom";
+// pc:end: jotai
+
 // pc:begin: material-ui
 import { Button } from "@mui/material";
 // pc:end: material-ui
@@ -25,7 +30,7 @@ import { Button } from "antd";
 
 const ThemeToggle = () => {
   // pc:begin: context-api
-  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+const { darkMode, toggleDarkMode } = useContext(ThemeContext);
   // pc:end: context-api
 
   // pc:begin: redux
@@ -37,15 +42,23 @@ const darkMode = useSelector((state) => state.darkMode);
 const { darkMode, toggleDarkMode } = useThemeStore();
   // pc:end: zustand
 
+  // pc:begin: jotai
+  const [darkMode, setDarkMode] = useAtom(darkModeAtom);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
+  // pc:end: jotai
+
   // pc:begin: bootstrap
 return (
 <button
   // pc:begin: redux
 onClick={() => dispatch(toggleDarkMode())}
   // pc:end: redux
-  // pc:begin: context-api, zustand
+  // pc:begin: context-api, zustand, jotai
 onClick={toggleDarkMode}
-  // pc:end: context-api, zustand
+  // pc:end: context-api, zustand, jotai
 className={`btn ${darkMode ? "btn-light" : "btn-dark"}`}
 >
 {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
@@ -61,9 +74,9 @@ color={darkMode ? "default" : "primary"}
   // pc:begin: redux
 onClick={() => dispatch(toggleDarkMode())}
   // pc:end: redux
-  // pc:begin: context-api, zustand
+  // pc:begin: context-api, zustand, jotai
 onClick={toggleDarkMode}
-  // pc:end: context-api, zustand
+  // pc:end: context-api, zustand, jotai
 >
 {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
 </Button>
@@ -78,9 +91,9 @@ onClick={toggleDarkMode}
       // pc:begin: redux
 onClick={() => dispatch(toggleDarkMode())}
       // pc:end: redux
-      // pc:begin: context-api, zustand
+      // pc:begin: context-api, zustand, jotai
       onClick={toggleDarkMode}
-      // pc:end: context-api, zustand
+      // pc:end: context-api, zustand, jotai
     />
   );
   // pc:end: ant-design

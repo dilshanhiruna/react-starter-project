@@ -86,6 +86,13 @@
         "description": "Description of context-api",
         "depend_features": [],
         "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "jotai",
+        "description": "Description of jotai",
+        "depend_features": [],
+        "depend_categories": [],
         "enabled": true
       }
     ]

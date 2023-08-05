@@ -5,3 +5,7 @@ store/store.js
 // pc:begin: zustand
 store/themeStore.js
 // pc:end: zustand
+
+// pc:begin: jotai
+store/themeAtom.js
+// pc:end: jotai

@@ -17,6 +17,10 @@ import store from "./store/store";
 import { ThemeProvider } from "./providers/ThemeContext";
 // pc:end: context-api
 
+// pc:begin: jotai
+import { Provider } from "jotai";
+// pc:end: jotai
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // pc:begin: redux
@@ -46,6 +50,16 @@ root.render(
 </React.StrictMode>
 );
 // pc:end: zustand
+
+// pc:begin: jotai
+root.render(
+<React.StrictMode>
+<Provider>
+<App />
+</Provider>
+</React.StrictMode>
+);
+// pc:end: jotai
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
