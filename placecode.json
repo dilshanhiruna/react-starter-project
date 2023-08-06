@@ -1,1 +1,100 @@
-[]
+[
+  {
+    "label": "frontend-library",
+    "description": "Description of frontend-library",
+    "required": true,
+    "features": [
+      {
+        "label": "react",
+        "description": "Description of react",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "fetch-api",
+    "description": "Description of fetch-api",
+    "required": true,
+    "features": [
+      {
+        "label": "fetch",
+        "description": "Description of react",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "axios",
+        "description": "Description of react",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "ui-library",
+    "description": "Description of ui-library",
+    "required": true,
+    "features": [
+      {
+        "label": "ant-design",
+        "description": "Description of ant-design",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": true
+      },
+      {
+        "label": "material-ui",
+        "description": "Description of material-ui",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "bootstrap",
+        "description": "Description of bootstrap",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      }
+    ]
+  },
+  {
+    "label": "state-management",
+    "description": "Description of state-management",
+    "required": true,
+    "features": [
+      {
+        "label": "redux",
+        "description": "Description of redux",
+        "depend_features": [""],
+        "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "zustand",
+        "description": "Description of zustand",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "context-api",
+        "description": "Description of context-api",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      },
+      {
+        "label": "jotai",
+        "description": "Description of jotai",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  }
+]
