@@ -1,12 +1,12 @@
 [
   {
-    "label": "f*&()*&rontend-library",
-    "description": "Description of frontend-library",
+    "label": "frontend-library",
+    "description": "This category includes frontend libraries used in web development to create user interfaces and manage the application's frontend logic.",
     "required": true,
     "features": [
       {
         "label": "react",
-        "description": "Description of react",
+        "description": "A JavaScript library for building interactive user interfaces, offering a component-based architecture and efficient rendering.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": true
@@ -15,19 +15,19 @@
   },
   {
     "label": "fetch-api",
-    "description": "Description of fetch-api",
+    "description": "The Fetch API category includes options for handling HTTP requests and fetching resources from a server.",
     "required": true,
     "features": [
       {
         "label": "fetch",
-        "description": "Description of react",
+        "description": "Enables using the native Fetch API to perform asynchronous HTTP requests in web applications.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": false
       },
       {
         "label": "axios",
-        "description": "Description of react",
+        "description": "A popular JavaScript library used for handling HTTP requests with additional features and browser compatibility.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": true
@@ -36,26 +36,26 @@
   },
   {
     "label": "ui-library",
-    "description": "Description of ui-library",
+    "description": "UI Library category comprises various libraries providing pre-designed components and styles for building visually appealing user interfaces.",
     "required": true,
     "features": [
       {
         "label": "ant-design",
-        "description": "Description of ant-design",
+        "description": "A comprehensive UI library offering a set of high-quality React components with a modern design.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": true
       },
       {
         "label": "material-ui",
-        "description": "Description of material-ui",
+        "description": "A popular React UI framework implementing Google's Material Design principles.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": false
       },
       {
         "label": "bootstrap",
-        "description": "Description of bootstrap",
+        "description": "A widely used CSS framework providing responsive and mobile-friendly UI components.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": false
@@ -64,33 +64,33 @@
   },
   {
     "label": "state-management",
-    "description": "Description of state-management",
+    "description": "State Management category deals with libraries or approaches to manage the application's state and data flow.",
     "required": true,
     "features": [
       {
         "label": "redux",
-        "description": "Description of redux",
-        "depend_features": [""],
+        "description": "A predictable state container for JavaScript apps, commonly used with React for managing global application state.",
+        "depend_features": [],
         "depend_categories": [],
         "enabled": false
       },
       {
         "label": "zustand",
-        "description": "Description of zustand",
+        "description": "A small and lightweight state management library for React applications.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": false
       },
       {
         "label": "context-api",
-        "description": "Description of context-api",
+        "description": "A built-in state management approach in React using context objects for sharing state across components.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": false
       },
       {
         "label": "jotai",
-        "description": "Description of jotai",
+        "description": "A new and efficient state management library for React applications, providing a simple and flexible approach.",
         "depend_features": [],
         "depend_categories": [],
         "enabled": true
