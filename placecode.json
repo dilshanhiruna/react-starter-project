@@ -2,7 +2,7 @@
   {
     "label": "frontend-library",
     "description": "Description of frontend-library",
-    "required": true,
+
     "features": [
       {
         "label": "react",
@@ -16,7 +16,7 @@
   {
     "label": "fetch-api",
     "description": "Description of fetch-api",
-    "required": true,
+
     "features": [
       {
         "label": "fetch",
@@ -37,7 +37,7 @@
   {
     "label": "ui-library",
     "description": "Description of ui-library",
-    "required": true,
+
     "features": [
       {
         "label": "ant-design",
@@ -65,7 +65,7 @@
   {
     "label": "state-management",
     "description": "Description of state-management",
-    "required": true,
+
     "features": [
       {
         "label": "redux",
