@@ -3,47 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-
     // pc:begin: material-ui
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.3",
     // pc:end: material-ui
-
     // pc:begin: redux
     "@reduxjs/toolkit": "^1.9.5",
     "react-redux": "^8.1.2",
     // pc:end: redux
-
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-
     // pc:begin: ant-design
     "antd": "^5.8.2",
     // pc:end: ant-design
-
     // pc:begin: axios
     "axios": "^1.4.0",
     // pc:end: axios
-
     // pc:begin: bootstrap
     "bootstrap": "^5.3.1",
     // pc:end: bootstrap
-
     // pc:begin: jotai
     "jotai": "^2.2.3",
     // pc:end: jotai
-
+    // pc:begin: zustand
+    "zustand": "^4.4.0",
+    // pc:end: zustand
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-
-    // pc:begin: zustand
-    "zustand": "^4.4.0"
-    // pc:end: zustand
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
